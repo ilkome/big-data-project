@@ -1,0 +1,92 @@
+extends _layout
+
+block append content
+	.welcomebox
+		.video 
+			video(autoplay loop poster="img/bg-welcome-1024.png" id="bgvid")
+				source(src="media/video.mp4" type="video/mp4")
+		.wrapbox
+			.logo: a(href="#", alt="Проект правительства Москвы")
+			.content
+				.content__title Мир<br>больших<br>данных
+				.content__text Доступ к информации<br>есть у всех. Работать<br>с ней умеют единицы.
+
+	.descbox
+		.bg-right
+		.wrapbox
+			.ins
+				.content__info
+					.title Big<br>Data<br>Project
+					.desc Проект правительства Москвы
+				.content__text 
+					p Это команда профессионалов высочайшего уровня. Способных находить даже самые неявные закономерности в огромных массивах данных. Превращая информацию в ценность.
+					p Мы собираем лучших специалистов и предлагаем им лучшие условия.
+
+	.jobbox
+		.wrapbox
+			.jobinfo
+				.title Вакансия
+				.count 
+					span.is-red 50 мест 
+					| | 300 заявок собрано
+			.jobcontent
+				h2 Аналитик данных
+				.jobcontent__meta
+					.count 1
+					.task Задачи
+				.jobcontent__text
+					ul
+						li Анализ больших массивов отраслевых данных (поиск закономерностей и точек повышения эффективности).
+						li Прогнозирование и построение моделей данных на основе найденных закономерностей.
+						li Поиск ошибок данных и путей оптимизации их структуры.
+						li Взаимодействие с бизнес-аналитиками и системными аналитиками по вопросам выгрузки данных и постановки новых задач на автоматизацию процессов.
+						li Подготовка и представление результатов анализа первым лицам города.
+				.jobcontent__meta
+					.count 2
+					.task Требования
+				.jobcontent__text
+					ul
+						li Высшее образование (техническое / экономическое).
+						li Высочайшие аналитические способности.
+						li Максимальная стрессоустойчивость.
+						li Развитые переговорные навыки.
+						li Строго командные игроки.
+						li Ориентация на результат.
+						li Навыки работы с любыми современными BI-системами как плюс, знание любых методологий описания бизнес-процессов и системных архитектур как плюс.
+				.jobcontent__meta
+					.count 3
+					.task Условия
+				.jobcontent__text.has-bg
+					.bg-square
+					.jobcontent__text-in
+						ul
+							li Полный рабочий день
+							li Оклад - 
+								strong.is-red 100 тыс. руб.
+							li Система грейдов (рост за первый год до 150 тыс. руб.)
+							li Ежеквартальные оценочные сессии (система up or out)
+							li Испытательный срок - 3 мес.
+				.jobcontent__meta
+					.count 4
+					.task Этапы отбора
+				.jobcontent__text
+					ul
+						li Конкурс резюме
+						li Очное тестирование
+						li Собеседования
+
+	.feedbackbox
+		.wrapbox
+			.ins
+				h2 Откликнуться на вакансию
+				form(action="#")
+					.rowbox-2
+						.colbox: input(type="text", placeholder="Имя", value="Илья").full
+						.colbox: input(type="text", placeholder="Фамилия").full
+					.rowbox-2.has-padding
+						.colbox: input(type="text", placeholder="Телефон").full
+						.colbox: input(type="text", placeholder="E-mail").full
+					.rowbox: input(type="text", placeholder="Сопроводительное письмо").full
+					.rowbox: a(href="#").attachfile Приложить письмо
+					.action.center: input(type="submit", value="Отправить")
+			.copy Big Data Project 2014-2015

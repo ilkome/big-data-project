@@ -1,0 +1,298 @@
+
+// ===============================================
+//	#vars
+// ===============================================
+
+color-white = #fff
+
+
+// ===============================================
+//	#fonts
+// ===============================================
+font-default = arial, sans-serif
+font-site = 'SegoeWPSemilight', font-default
+font-site-light = 'SegoeWPLight', font-default
+
+font-roboto()
+	font-family 'Roboto', arial, sans-serif
+font-roboto-cond()
+	font-family 'Roboto Condensed', arial, sans-serif
+font-light()
+	font-weight 300
+font-regular()
+	font-weight 500
+font-bold()
+	font-weight 700
+
+font-main()
+	font-size 14px
+	color color-white
+	font-family font-site
+
+font-link()
+	color #FFF
+font-header()
+	color #252728
+	font-family font-site
+	font-size 44px
+	font-weight 300
+font-form()
+	color color-white
+	font-size 19px
+
+
+
+// ===============================================
+//	#reset
+// ===============================================
+*
+	margin 0
+	padding 0
+	border 0
+	outline 0
+
+
+
+// ===============================================
+//	#list
+// ===============================================
+ul
+	margin 0 0 30px 5px
+	li
+		margin 0 0 10px 15px
+		padding-left 20px
+		list-style none
+		background url("../img/li.png") 0 13px no-repeat
+		ul, ol
+			margin 15px 0 10px 0
+ol
+	margin 0 0 15px 0
+	li
+		margin 0 0 15px 15px
+		list-style decimal inside
+		ul, ol
+			margin 15px 0 10px 0
+.no-list-style 
+	margin 0
+	li
+		margin-left 0
+		list-style-type none
+
+
+
+// ===============================================
+//	#text
+// ===============================================
+p
+	margin-bottom 20px
+
+
+
+// ===============================================
+//	#links
+// ===============================================
+a
+	display inline-block
+	padding-bottom 3px
+	font-link()
+	text-decoration none
+	anim-all()
+	//border-bottom 1px solid alpha(#FFF, .3)
+	&:hover
+		color #F16529
+		border-color transparent
+	&.active
+		cursor default 
+		tdn()
+li.is-active a 
+	cursor default
+	tdn()
+
+
+
+// ===============================================
+//	#headers
+// ===============================================
+h1, h2, h3, h4, h5, h6
+	margin 0 0 20px 0
+	font-header()
+h1
+	font-size 40px
+h2
+	font-size 36px
+h3
+	font-size 28px
+h4
+	font-size 16px
+
+
+
+// ===============================================
+//	#forms
+// ===============================================
+label, input, button, select, textarea
+	font-form()
+
+
+
+// ===============================================
+//	#select
+// ===============================================
+/*select
+	width auto
+	margin-bottom 10px
+	padding 4px 10px
+	full()
+	background #fff
+	border 1px solid #c8d9eb
+	color #819397
+	font-size 16px
+	option
+		padding 5px 10px
+select.full
+	width 100%*/
+
+
+
+// ===============================================
+//	#inputs
+// ===============================================
+input[type="text"]
+input[type="password"]
+input[type="email"]
+input[type="phone"]
+	width 300px
+	margin-bottom 10px
+	padding 20px 0px 15px 0px
+	full()
+	background none
+	border none
+	border-bottom 1px solid #5e112d
+	box-shadow 0 1px 0 #a8002c
+	anim()
+	&:hover
+		border-color alpha(#5e112d, .8)
+		box-shadow 0 1px 0 alpha(#a8002c, .8)
+	&:focus
+		border-color alpha(#fff, .6)
+		box-shadow 0 1px 0 alpha(#fff, .4)
+	//&.error
+	//&.valid
+	&.full
+		width 100%
+
+
+// ===============================================
+//	#input submit
+// ===============================================
+input[type="submit"]
+	width auto
+	padding 15px 60px
+	border 2px solid #a8002c
+	box-shadow 0 0 0 1px #5e112d
+	background none
+	cursor pointer
+	anim()
+	&:hover
+		background alpha(#a8002c, .4)
+	&:active
+		opacity 0.8
+
+
+
+// ===============================================
+//	#textarea
+// ===============================================
+textarea
+	width 238px
+	max-width 100%
+	height 200px
+	margin-bottom 10px
+	padding 10px 10px
+	full()
+	background #fff
+	border 1px solid #c8d9eb
+	anim()
+	&:hover
+	&:focus
+		background #f4f9ff
+textarea.full
+	width 100%
+
+
+
+// ===============================================
+//	#radio
+// ===============================================
+/*input[type="radio"] + label 
+	cursor:pointer
+	margin:0px 20px 0px 0
+	font-form()
+input[type="radio"] + label::before 
+	content " "
+	display inline-block
+	height 18px
+	width 18px
+	margin 0 10px -3px 0px
+	background url("../img/radio.png") no-repeat;
+input[type="radio"]
+	display:none
+input[type="radio"]:disabled + label 
+	cursor:default
+input[type="radio"] + label:hover::before
+	background-position 0px 0px
+input[type="radio"]:checked + label::before 
+	background-position 0 -18px
+input[type="radio"]:disabled + label::before 
+	background-position:0px 0px
+	opacity .8
+input[type="radio"]:checked:disabled + label::before 
+	background-position 0px -18px
+	opacity .8*/
+
+
+
+// ===============================================
+//	#checkbox
+// ===============================================
+/*input[type="checkbox"]
+	width 21px
+	height 21px
+	margin 0 3px 0 0
+	vertical-align top
+input[type="checkbox"]
+	& + label
+		cursor pointer
+	&:not(checked)
+		position absolute
+		opacity 0
+		& + label
+			position relative
+			display inline-block
+			padding 0 0 0 35px
+			font-size 14px
+		& + label:after
+			content ''
+			position absolute
+			top -3px
+			left 0px
+			width 21px
+			height 21px
+			background url("../img/checkbox-b.png") no-repeat
+	&:checked
+		//	checked
+		& + label:after
+			background-position 0 -21px
+		//	focus
+		& + label:before
+			position relative*/
+			
+
+
+// ===============================================
+//	#table
+// ===============================================
+table
+	width 100%
+	td
+		vertical-align top
