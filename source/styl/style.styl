@@ -55,9 +55,13 @@ html
 	background url("../img/bg-welcome-1024.png") center center no-repeat
 	bgcover()
 	@media md
-		height 770px
 		background url("../img/bg-welcome-1024.png") center center no-repeat
 		bgcover()
+	@media lg
+		height 100%
+		.wrapbox
+			height 100%
+
 	.video video
 		display none
 		@media xl
@@ -103,6 +107,13 @@ html
 			width 430px
 			height 460px
 			background url("../img/square-welcome.png") 85px 0 no-repeat
+		@media lg
+			position absolute 
+			left 50%
+			top 50%
+			margin-top -220px
+			margin-left -155px
+			
 	
 	.content__title
 		padding 80px 0 0 0
