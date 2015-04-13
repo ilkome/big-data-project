@@ -79,7 +79,7 @@ block append content
 		.wrapbox
 			.ins
 				h2 Откликнуться на вакансию
-				form(action="#")
+				form(action="form-result.html")
 					.rowbox-2
 						.colbox: input(type="text", placeholder="Имя", value="Илья").full
 						.colbox: input(type="text", placeholder="Фамилия").full
@@ -87,6 +87,6 @@ block append content
 						.colbox: input(type="text", placeholder="Телефон").full
 						.colbox: input(type="text", placeholder="E-mail").full
 					.rowbox: textarea(rows='1', placeholder="Сопроводительное письмо").full.autosize
-					.rowbox: a(href="#").attachfile Приложить письмо
+					.rowbox: a(href="form-result.html").attachfile Приложить письмо
 					.action.center: input(type="submit", value="Отправить")
 			.copy Big Data Project 2014-2015
