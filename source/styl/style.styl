@@ -81,7 +81,7 @@ html
 	.logo
 		padding 10px 0 95px 0px
 		@media sm
-			padding 30px 0 55px 0px
+			padding 30px 0 95px 0px
 		@media md
 			padding 40px 0 55px 0px
 	
@@ -120,17 +120,28 @@ html
 		text-transform uppercase
 		line-height 54px
 		letter-spacing 2px
+		@media sm
+			margin-left -45px
+			letter-spacing 4px
 		@media md
+			margin-left 0
 			padding 88px 0 0 0
 			letter-spacing 6px
+			line-height 56px
 	
 	.content__text
 		float right
 		position relative
 		padding 30px 10px 0 0px
 		font-size 20px
+		@media sm
+			margin-right -20px
+			letter-spacing -0.5px
+			line-height 26px
 		@media md
+			margin-right 10px
 			padding 35px 0 0 200px
+			letter-spacing -0.5px
 
 
 
@@ -141,6 +152,8 @@ html
 	overflow hidden
 	position relative
 	padding 100px 0 90px 0
+	@media sm
+		padding-bottom 70px
 	@media lg
 		padding 150px 0
 		.ins
@@ -172,14 +185,16 @@ html
 		position relative
 		width 250px
 		margin 0 auto
-		background url("../img/480/square-info.png") 4px 0px no-repeat
+		background url("../img/480/square-info.png") 0px 0px no-repeat
+		@media sm
+			width 275px
 		@media lg
 			width auto
 			height 460px
 			margin-left 0px
 			background url("../img/square-info.png") 70px 0px no-repeat
-			@media xl
-				margin-left 115px
+		@media xl
+			margin-left 115px
 		
 		.title
 			padding 85px 0 85px 0
@@ -187,17 +202,20 @@ html
 			text-transform uppercase
 			line-height 54px
 			letter-spacing 1px
+			@media sm
+				margin-left -5px
+				padding 80px 0 85px 0
+				letter-spacing 2px
 			@media lg
 				padding-top 90px
-				padding-left 5px
+				padding-left 10px
 				font-size 55px
 				text-transform uppercase
-				line-height 54px
-				letter-spacing 2px
+				line-height 54px				
 		
 		.desc
 			width 100px
-			padding 0 0 130px 35px
+			padding 0 0 125px 30px
 			font-size 19px
 			@media lg
 				position absolute 
@@ -213,19 +231,22 @@ html
 		letter-spacing 0.5px
 		line-height 30px
 		hyphens auto
-		@media md
-			hyphens none
+		@media sm
+			padding 0 80px 0 80px
+			line-height 29px
 		@media lg
+			hyphens none
 			position absolute 
-			left 380px 
+			left 330px 
 			top 95px
 			width 300px
 			font-size 18px
 			line-height 23px
 			letter-spacing 1px
 		@media xl
-			width 320px
-			left 510px
+			width 450px
+			left 430px
+			letter-spacing 0px
 		
 		p
 			margin-bottom 25px
@@ -241,14 +262,17 @@ html
 	position relative
 	background #efefef
 	color #3B3B3B
+	@media sm
+		padding-bottom 45px
 	@media md
-		padding-top 45px
-		padding-bottom 85px
+		padding 45px 0 85px 0
 
 .jobinfo
 	clearfix()
 	padding-bottom 25px
 	font-size 19px
+	@media sm
+		padding-bottom 40px
 	@media md
 		padding-bottom 40px
 	.title
@@ -268,11 +292,14 @@ html
 		font-size 53px
 		line-height 40px
 		letter-spacing -1px
+		@media sm
+			padding-bottom 10px
 		@media md
-			margin-bottom 45px
+			margin-bottom 35px
 			font-size 44px
 			line-height auto
 			letter-spacing -0.5px
+		
 
 .jobcontent__meta
 	padding-bottom 45px
@@ -281,15 +308,18 @@ html
 		padding-bottom 20px
 	
 	.count 
-		width 95px
+		width 100%
 		padding-bottom 12px
 		border-bottom 2px solid #b3b3b3
 		font-size 19px
+		@media sm
+			width auto
 		@media md
+			width 95px
 			font-size 27px
 	
 	.task
-		padding-top 10px
+		padding-top 12px
 		color #858585
 		font-size 19px
 		text-transform uppercase
@@ -321,7 +351,10 @@ html
 		margin-left 0
 		margin-bottom 30px
 		padding-left 20px
+		@media sm
+			padding-left 25px
 		@media md
+			padding-left 20px
 			margin-bottom 22px
 
 .jobcontent__text.has-bg
@@ -357,20 +390,33 @@ html
 .feedbackbox
 	padding 90px 0 40px 0
 	color color-white
+	@media sm
+		padding-top 75px
 	@media md
 		padding-top 100px
 		
 	.ins
 		padding-bottom 90px
+		@media sm
+			padding-bottom 100px
 		@media lg
 			padding-left 110px
 			padding-right 110px
+			padding-bottom 90px
 	
 	h2
 		color color-white
 		font-size 44px
 		letter-spacing -1px
-	
+		@media sm
+			font-size 53px
+			line-height 64px
+			margin-bottom 65px
+		@media md
+			margin-bottom 15px
+			font-size 44px
+			line-height 70px
+		
 	a.attachfile
 		display block
 		margin-top 40px
@@ -383,31 +429,61 @@ html
 			color color-white
 			border-color alpha(#fff, .4)
 	
-	.rowbox-2
+	.rowbox-2				
 		@media lg
 			wrap()
 			gutter(20px)
 			margin-bottom 0px
 	
 			.colbox
+				margin-bottom 0
 				col(2, 1)
 	
 	.rowbox-2.has-padding
 		margin-bottom 20px
+		@media lg
+			margin-bottom 25px
+		
+	.colbox
+		@media sm
+			margin-bottom 22px
+		@media xl
+			margin-bottom 0
+		
+	.input-text
+		margin-bottom 5px
+		@media sm
+			font-size 20px
+			letter-spacing 1px
+		@media lg
+			margin-bottom 5px
+			font-size 19px
+			letter-spacing 0px
 	
+	.action
+		padding-top 45px
+		@media lg
+			padding-top 0px
+
 	.hvr-sweep-to-right
+		display block
 		position relative
 		backface-visibility hidden
 		transform translateZ(0)
-		padding 17px 62px
-		height 55px
+		padding 35px 62px
 		font-family font-site-bold
-		font-size 13px
+		font-size 19px
 		border 2px solid #a8002c
 		box-shadow 0 0 0 1px #5e112d
 		text-transform uppercase
 		transition-property color
 		transition-duration 0.3s
+		@media lg
+			display inline-block
+			width auto
+			padding 17px 62px
+			font-size 13px
+			
 		&:before
 			content ""
 			position absolute
@@ -427,7 +503,7 @@ html
 			border 2px solid #a8002c
 			box-shadow 0 0 0 1px #5e112d
 		&:hover:before, &:focus:before, &:active:before
-			transform scaleX(1)			
+			transform scaleX(1)
 	
 	.copy 
 		color #4C5168

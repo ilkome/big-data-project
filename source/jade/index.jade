@@ -81,12 +81,12 @@ block append content
 				h2 Откликнуться на вакансию
 				form(action="form-result.html")
 					.rowbox-2
-						.colbox: input(type="text", placeholder="Имя", value="Илья").full
-						.colbox: input(type="text", placeholder="Фамилия").full
+						.colbox: input(type="text", placeholder="Имя", value="Илья").full.input-text
+						.colbox: input(type="text", placeholder="Фамилия").full.input-text
 					.rowbox-2.has-padding
-						.colbox: input(type="text", placeholder="Телефон").full
-						.colbox: input(type="text", placeholder="E-mail").full
-					.rowbox: textarea(rows='1', placeholder="Сопроводительное письмо").full.autosize
+						.colbox: input(type="text", placeholder="Телефон").full.input-text
+						.colbox: input(type="text", placeholder="E-mail").full.input-text
+					.rowbox: textarea(rows='1', placeholder="Сопроводительное письмо").full.autosize.textarea-text
 					.rowbox: a(href="form-result.html").attachfile Приложить письмо
 					.action.center: a(href="#").hvr-sweep-to-right Отправить
 			.copy Big Data Project 2014-2015
