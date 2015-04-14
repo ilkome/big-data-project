@@ -14,4 +14,27 @@ $(document).ready(function(){
 
 	// autoresize textarea
 	autosize($('textarea.autosize'));
+
+
+	// paralax
+	/*var s = skrollr.init({
+		forceHeight: false,
+	});
+
+	//	run functions on resize
+	//	use timer to make resize correct
+	// ===============================================
+	var timer;
+	$(window).on("resize", function(){
+		clearTimeout(timer);
+		timer = setTimeout(function(){
+			var windowWidth = $(window).width();
+			if(windowWidth < 1025) {
+				s.destroy()
+			} else {
+				s = skrollr.init()
+			}
+		}, 200);
+	});*/
+
 });

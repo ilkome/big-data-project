@@ -55,23 +55,24 @@ html
 // ===============================================
 .welcomebox
 	position relative
-	height 700px
+	height 100%
+	min-height 650px
 	background url("../img/bg-welcome-1024.png") center center no-repeat
 	bgcover()
 	@media md
 		background url("../img/bg-welcome-1024.png") center center no-repeat
 		bgcover()
 	@media lg
-		height 100%
+		min-height 700px
+	@media large
 		min-height 700px
 	@media mlarge
 		min-height 800px
 
 	.wrapbox
 		z-index 2
-		@media lg
-			height 100%
-			min-height 700px
+		height 100%
+		min-height 700px
 		@media mlarge
 			min-height 800px
 
@@ -124,6 +125,11 @@ html
 		margin 0 auto
 		background url("../img/480/square-welcome.png") 35px 0 no-repeat
 		anim()
+		position absolute
+		left 50%
+		top 50%
+		margin-top -220px
+		margin-left -150px
 		@media sm
 			width 350px
 		@media md
@@ -131,9 +137,6 @@ html
 			height 460px
 			background url("../img/square-welcome.png") 85px 0 no-repeat
 		@media lg
-			position absolute 
-			left 50%
-			top 50%
 			margin-top -220px
 			margin-left -210px
 		@media large
@@ -212,14 +215,18 @@ html
 .descbox
 	overflow hidden
 	position relative
-	padding 100px 0 90px 0
+	padding 50px 0 90px 0
+	background #1d202d
 	@media sm
+		padding-top 90px
 		padding-bottom 70px
 	@media lg
-		padding 150px 0			
+		padding 150px 0	
 	@media xl
-		padding 0
 		height 100%
+		padding 0
+		min-height 600px
+	@media large
 		min-height 700px
 	@media mlarge
 		min-height 800px
@@ -241,7 +248,7 @@ html
 	.wrapbox
 		@media xl
 			height 100%
-			min-height 700px
+			min-height 600px
 	
 	.bg-right
 		@media xl
@@ -377,9 +384,9 @@ html
 //	#jobbox
 // ===============================================
 .jobbox
+	position relative
 	padding-top 100px
 	padding-bottom 100px
-	position relative
 	background #efefef
 	color #3B3B3B
 	@media sm
@@ -412,6 +419,7 @@ html
 		padding-right 20px
 	.count
 		float left
+		color #858585
 		@media md
 			float right 
 
@@ -589,12 +597,15 @@ html
 .feedbackbox
 	padding 90px 0 40px 0
 	color color-white
+	background #1d202d
 	@media sm
 		padding-top 75px
 	@media md
 		padding-top 100px
 	@media xl
-		padding-top 100px	
+		padding-top 100px
+		//position fixed
+		//width 100%
 	@media large
 		padding-top 130px
 	@media mlarge
@@ -824,3 +835,34 @@ html
 		padding 100px
 	@media xlarge
 		padding 200px
+		
+
+
+#red, #blue {
+	width:128px;
+	height:128px;
+	background:#f33 url(images/face.png);
+}
+
+#red {
+	position: absolute;
+	float:left;
+	margin:1em;
+}
+
+#blue {
+	background:#09f;
+	margin-top:20px;
+	width 100px
+	height 100px
+	z-index 1000;
+}
+
+#blue_wrapper {
+	position:fixed;
+	top:0;
+	right:20px;
+	width 10px
+	height 10px
+	z-index 1000;
+}

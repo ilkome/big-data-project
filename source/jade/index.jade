@@ -1,7 +1,9 @@
 extends _layout
 
 block append content
-	.welcomebox
+	//-div(id="blue_wrapper" data-smooth-scrolling="off")
+		div(id="blue" data-anchor-target="#red" data-bottom-top="height:100px" data-top-bottom="height:400px")
+	.welcomebox(data-0="display: block;" data-200p="display: none")
 		.video 
 			video(autoplay loop poster="img/bg-welcome-1024.png" id="bgvid")
 				source(src="media/video.mp4" type="video/mp4")
@@ -11,9 +13,10 @@ block append content
 				.content__title Мир<br>больших<br>данных
 				.content__text Доступ к информации<br>есть у всех. Работать<br>с ней умеют единицы.
 
-	.descbox
+	.descbox(data-50p="display: block; top:100%" data-100p="top:0%" data-300p="display: none")
+		//-div(id="red" data-bottom="transform:rotate(0deg);transform-origin:center;" data-top="transform:rotate(360deg);")
 		.bg-right
-		.wrapbox
+		.wrapbox(data-50p="opacity:0; margin-top:1000px" data-100p="opacity:1; margin-top:0px" data-210p="opacity:1; margin-top:0px" data-280p="opacity:0; margin-top:-500px")
 			.ins
 				.content__info
 					.title Big<br>Data<br>Project
@@ -22,7 +25,7 @@ block append content
 					p Это команда профессионалов высочайшего уровня. Способных находить даже самые неявные закономерности в огромных массивах данных. Превращая информацию в ценность.
 					p Мы собираем лучших специалистов и предлагаем им лучшие условия.
 
-	.jobbox
+	.jobbox(data-0="margin:150% 0;")
 		.wrapbox
 			.jobinfo
 				.title Вакансия
@@ -75,7 +78,7 @@ block append content
 						li Очное тестирование
 						li Собеседования
 
-	.feedbackbox
+	.feedbackbox(data-480p="top:100%" data-520p="top:0")
 		.wrapbox
 			.ins
 				h2 Откликнуться на вакансию
@@ -90,3 +93,4 @@ block append content
 					.rowbox: a(href="form-result.html").attachfile Приложить резюме
 					.action.center: a(href="#").hvr-sweep-to-right Отправить
 			.copy Big Data Project 2014-2015
+			
