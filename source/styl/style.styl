@@ -41,7 +41,9 @@ html
 		padding 0 70px
 	@media large
 		padding 0 85px
-	
+	@media mlarge
+		padding 0 90px
+		max-width 1366px	
 
 .is-red
 	color #A8002C
@@ -53,7 +55,7 @@ html
 // ===============================================
 .welcomebox
 	position relative
-	height 855px
+	height 700px
 	background url("../img/bg-welcome-1024.png") center center no-repeat
 	bgcover()
 	@media md
@@ -62,12 +64,16 @@ html
 	@media lg
 		height 100%
 		min-height 700px
+	@media mlarge
+		min-height 800px
 
 	.wrapbox
 		z-index 2
 		@media lg
 			height 100%
 			min-height 700px
+		@media mlarge
+			min-height 800px
 
 	.video video
 		display none
@@ -106,12 +112,17 @@ html
 			width 189px
 			height 76px
 			background url("../img/1280/logo.png") no-repeat
+		@media mlarge
+			width 200px
+			height 81px
+			background url("../img/1366/logo.png") no-repeat
 	
 	.content
 		width 310px
 		height 437px
 		margin 0 auto
 		background url("../img/480/square-welcome.png") 35px 0 no-repeat
+		anim()
 		@media sm
 			width 350px
 		@media md
@@ -129,6 +140,11 @@ html
 			margin-top -270px
 			margin-left -160px
 			background url("../img/1280/square-welcome.png") 0 0 no-repeat
+		@media mlarge
+			height 612px
+			margin-top -270px
+			margin-left -170px
+			background url("../img/1366/square-welcome.png") 0 0 no-repeat
 			
 	
 	.content__title
@@ -137,8 +153,9 @@ html
 		text-transform uppercase
 		line-height 54px
 		letter-spacing 2px
+		anim()
 		@media sm
-			margin-left -45px
+			margin-left -10px
 			letter-spacing 4px
 		@media md
 			margin-left 0
@@ -151,12 +168,19 @@ html
 			font-size 70px
 			letter-spacing 3px
 			line-height 70px
+		@media mlarge
+			padding-top 115px
+			margin-left -120px
+			font-size 75px
+			letter-spacing 3.5px
+			line-height 75px
 	
 	.content__text
 		float right
 		position relative
 		padding 30px 10px 0 0px
 		font-size 20px
+		anim()
 		@media sm
 			margin-right -20px
 			letter-spacing -0.5px
@@ -173,7 +197,11 @@ html
 			padding 45px 0 0 145px
 			font-size 26px
 			line-height 34px
-			letter-spacing 0px
+		@media mlarge
+			margin-right -35px
+			padding 45px 0 0 0px
+			font-size 28px
+			line-height 36px
 
 
 
@@ -187,19 +215,20 @@ html
 	@media sm
 		padding-bottom 70px
 	@media lg
-		padding 150px 0
-		.ins
-			position relative
-			width 660px
-			margin 0 auto
+		padding 150px 0			
 	@media xl
 		padding 0
 		height 100%
 		min-height 700px
-		.wrapbox
-			height 100%
-			min-height 700px
-		.ins
+	@media mlarge
+		min-height 800px
+
+	.ins
+		@media lg
+			position relative
+			width 660px
+			margin 0 auto
+		@media xl
 			z-index 5
 			position absolute 
 			left 50% 
@@ -207,7 +236,14 @@ html
 			width 900px
 			margin-left -450px
 			transform translate(0%, -50%)
-		.bg-right
+	
+	.wrapbox
+		@media xl
+			height 100%
+			min-height 700px
+	
+	.bg-right
+		@media xl
 			position absolute 
 			width 50%
 			height 100%
@@ -233,6 +269,10 @@ html
 			margin-left 120px
 			height 574px
 			background url("../img/1280/square-info.png") 0px 0px no-repeat
+		@media mlarge
+			margin-left 95px
+			height 612px
+			background url("../img/1366/square-info.png") 0px 0px no-repeat
 		
 		.title
 			padding 85px 0 85px 0
@@ -240,6 +280,7 @@ html
 			text-transform uppercase
 			line-height 54px
 			letter-spacing 1px
+			anim()
 			@media sm
 				margin-left -5px
 				padding 80px 0 85px 0
@@ -255,11 +296,19 @@ html
 				padding-left 0
 				font-size 70px
 				line-height 70px
+			@media mlarge
+				margin-left -90px
+				padding-top 115px
+				padding-left 0
+				font-size 75px
+				line-height 75px
+				letter-spacing 3.5px
 		
 		.desc
 			width 100px
 			padding 0 0 125px 30px
 			font-size 19px
+			anim()
 			@media lg
 				position absolute 
 				left 100px 
@@ -272,6 +321,11 @@ html
 				left 40px
 				font-size 18px
 				line-height 26px
+			@media mlarge
+				bottom 40px
+				left 40px
+				font-size 20px
+				line-height 26px
 	
 	.content__text
 		padding 0 0px
@@ -279,6 +333,7 @@ html
 		letter-spacing 0.5px
 		line-height 30px
 		hyphens auto
+		anim()
 		@media sm
 			padding 0 80px 0 80px
 			line-height 29px
@@ -287,7 +342,7 @@ html
 			position absolute 
 			left 330px 
 			top 95px
-			width 300px
+			width 450px
 			font-size 18px
 			line-height 23px
 			letter-spacing 1px
@@ -299,12 +354,21 @@ html
 			width 585px
 			left 445px
 			top 115px
-			font-family 22px
+			font-size 22px
 			line-height 29px
-			letter-spacing 2px
+			letter-spacing 0px
+		@media mlarge
+			width 585px
+			left 440px
+			top 120px
+			font-size 24px
+			line-height 31px
 	
 		p
 			margin-bottom 25px
+			@media mlarge
+				margin-bottom 30px
+			
 
 
 
@@ -324,6 +388,8 @@ html
 	@media large
 		padding-top 60px
 		padding-bottom 100px
+	@media mlarge
+		padding-top 65px
 
 .jobinfo
 	clearfix()
@@ -336,6 +402,9 @@ html
 	@media large
 		padding-bottom 55px
 		font-size 22px
+	@media mlarge
+		padding-bottom 60px
+		font-size 24px
 
 	.title
 		float left
@@ -346,10 +415,13 @@ html
 			float right 
 
 .jobcontent
+	anim()
 	@media lg
 		padding-left 110px
 	@media large
 		padding-left 140px
+	@media mlarge
+		padding-left 150px
 	
 	h2
 		margin-bottom 30px
@@ -366,6 +438,9 @@ html
 		@media large
 			margin-bottom 50px
 			font-size 56px
+		@media mlarge
+			margin-bottom 55px
+			font-size 60px
 		
 
 .jobcontent__meta
@@ -389,6 +464,10 @@ html
 		@media large
 			width 125px
 			font-size 34px
+		@media mlarge
+			width 130px
+			padding-bottom 15px
+			font-size 36px
 	
 	.task
 		padding-top 12px
@@ -403,12 +482,17 @@ html
 			padding-top 18px
 			font-size 17px
 			letter-spacing 1px
+		@media mlarge
+			padding-top 20px
+			font-size 18px
+			letter-spacing 1px
 
 .jobcontent__text
 	margin-right 50px
 	font-size 23px
 	line-height 28px
 	hyphens auto
+	anim()
 	@media md
 		margin-left 95px
 		padding-right 95px
@@ -418,6 +502,9 @@ html
 	@media large
 		font-size 18px
 		line-height 29px
+	@media mlarge
+		font-size 20px
+		line-height 31px
 		
 	ul
 		margin-left 0
@@ -427,6 +514,8 @@ html
 			margin-bottom 40px
 		@media large
 			margin-bottom 50px
+		@media mlarge
+			margin-bottom 60px
 	
 	li
 		margin-left 0
@@ -441,6 +530,10 @@ html
 			margin-left 25px
 			padding-left 25px
 			margin-bottom 28px
+		@media mlarge
+			margin-left 30px
+			padding-left 28px
+			margin-bottom 30px
 
 .jobcontent__text.has-bg
 	position relative
@@ -449,8 +542,9 @@ html
 		padding 30px 0
 	@media large
 		margin -65px 165px 60px 90px
-		margin-left 90px
 		padding 35px 0
+	@media mlarge
+		margin -65px 180px 70px 100px
 	
 	ul
 		@media md
@@ -459,6 +553,9 @@ html
 		@media large
 			margin-top 10px
 			margin-left 0px
+		@media mlarge
+			margin-top 10px
+			margin-left -5px
 	
 	.jobcontent__text-in
 		@media md
@@ -479,6 +576,9 @@ html
 		@media large
 			width 410px
 			border 10px solid #a8002c
+		@media large
+			width 430px
+			border 11px solid #a8002c
 			
 
 
@@ -496,19 +596,19 @@ html
 		padding-top 100px	
 	@media large
 		padding-top 130px
+	@media mlarge
+		padding-top 135px
 		
 	.ins
 		padding-bottom 90px
 		@media sm
 			padding-bottom 100px
 		@media lg
-			padding-left 110px
-			padding-right 110px
-			padding-bottom 90px
+			padding 0 110px 90px 110px
 		@media large
-			padding-left 140px
-			padding-right 140px
-			padding-bottom 115px
+			padding 0 140px 115px 140px
+		@media mlarge
+			padding 0 150px 120px 150px
 	
 	h2
 		color color-white
@@ -525,6 +625,9 @@ html
 		@media large
 			margin-bottom 30px
 			font-size 56px
+		@media mlarge
+			margin-bottom 40px
+			font-size 60px
 	
 	.rowbox-2				
 		@media lg
@@ -565,6 +668,11 @@ html
 		@media large
 			margin-bottom 10px
 			font-size 22px
+		@media mlarge
+			margin-bottom 15px
+			font-size 24px
+			
+
 	.textarea-text
 		@media sm
 			letter-spacing 2px
@@ -572,6 +680,8 @@ html
 			letter-spacing 0px
 		@media large
 			font-size 22px
+		@media mlarge
+			font-size 24px
 	
 	.action
 		padding-top 45px
@@ -579,6 +689,8 @@ html
 			padding-top 0px
 		@media large
 			padding-top 20px
+		@media mlarge
+			padding-top 30px
 			
 	a.attachfile
 		display block
@@ -602,6 +714,9 @@ html
 			margin-top 60px
 			font-size 22px
 			background url("../img/1280/i-plus.png") right center no-repeat
+		@media mlarge
+			font-size 24px
+			background url("../img/1366/i-plus.png") right center no-repeat
 
 	.hvr-sweep-to-right
 		display block
@@ -624,6 +739,9 @@ html
 		@media large
 			padding 22px 80px
 			font-size 16px
+		@media mlarge
+			padding 24px 80px
+			font-size 18px
 			
 		&:before
 			content ""
@@ -654,6 +772,8 @@ html
 			font-size 14px
 		@media large
 			font-size 15px
+		@media mlarge
+			font-size 16px
 			
 
 
