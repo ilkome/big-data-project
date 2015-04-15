@@ -21,6 +21,10 @@ $(document).ready(function(){
 		forceHeight: false,
 	});
 
+	if(s.isMobile()){
+		s.destroy()
+	}
+
 	//	run functions on resize
 	//	use timer to make resize correct
 	// ===============================================

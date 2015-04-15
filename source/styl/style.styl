@@ -53,7 +53,6 @@ html
 // ===============================================
 .welcomebox
 	position relative
-	height 100%
 	min-height 450px
 	background url("../img/bg-welcome-1024.png") center center no-repeat
 	bgcover()
@@ -63,6 +62,7 @@ html
 		bgcover()
 	@media xl
 		min-height 650px
+		height 100%
 	@media large
 		min-height 700px
 	@media mlarge
@@ -88,7 +88,6 @@ html
 			min-height 100%
 			width auto
 			height auto
-			z-index 1
 	
 	.logo
 		padding 25px 0 95px 0px
@@ -105,10 +104,16 @@ html
 		width 130px
 		height 53px
 		background url("../img/320/logo.png") no-repeat
+		@media retina 
+			background url("../img/320/logo@2x.png") no-repeat
+			background-size contain
 		@media sm
 			width 192px
 			height 79px
 			background url("../img/480/logo.png") no-repeat
+			@media retina 
+				background url("../img/320/logo@2x.png") no-repeat
+				background-size contain
 		@media xl
 			width 151px
 			height 61px
@@ -233,7 +238,7 @@ html
 	@media xl
 		padding 0
 		height 100%
-		min-height 700px
+		min-height 700px			
 	@media large
 		min-height 700px
 	@media mlarge
@@ -346,14 +351,13 @@ html
 				line-height 26px
 	
 	.content__text
-		padding 0 40px
+		margin-left -15px
 		font-size 15px
 		line-height 19px
 		letter-spacing 0px
 		hyphens auto
 		anim()
 		@media sm
-			padding 0 65px
 			font-size 22px
 			line-height 29px
 			letter-spacing 0.5px
@@ -362,12 +366,14 @@ html
 			position absolute 
 			left 460px 
 			top 95px
-			width 450px
+			width 420px
+			margin-left 0px
+			padding 0 65px
 			font-size 18px
 			line-height 23px
 			letter-spacing 0px
 		@media large
-			width 555px
+			width 480px
 			left 470px
 			top 115px
 			font-size 22px
@@ -392,6 +398,7 @@ html
 //	#jobbox
 // ===============================================
 .jobbox
+	//display none
 	position relative
 	padding-top 65px
 	padding-bottom 5px
