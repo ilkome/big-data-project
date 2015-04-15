@@ -4,6 +4,9 @@
 // ===============================================
 
 color-white = #fff
+color-red = #a8002c
+color-grey = #3B3B3B
+color-grey-white = #858585
 
 
 // ===============================================
@@ -37,6 +40,7 @@ font-regular()
 	font-weight 500
 font-bold()
 	font-weight 700
+
 
 
 // ===============================================
@@ -94,7 +98,6 @@ a
 	font-link()
 	text-decoration none
 	anim-all()
-	//border-bottom 1px solid alpha(#FFF, .3)
 	&:hover
 		color #F16529
 		border-color transparent
@@ -166,16 +169,13 @@ input[type="phone"]
 	border none
 	border-bottom 2px solid #a8002c
 	anim()
-	&:hover
-		//border-color alpha(#5e112d, .8)
-		//box-shadow 0 1px 0 alpha(#a8002c, .8)
-	&:focus
-		//border-color alpha(#fff, .6)
-		//box-shadow 0 1px 0 alpha(#fff, .4)
+	//&:hover
+	//&:focus
 	//&.error
 	//&.valid
 	&.full
 		width 100%
+
 
 
 // ===============================================
@@ -189,10 +189,8 @@ input[type="submit"]
 	background none
 	cursor pointer
 	anim()
-	&:hover
-		//background alpha(#a8002c, .4)
-	&:active
-		//opacity 0.8
+	//&:hover
+	//&:active
 
 
 
@@ -210,12 +208,8 @@ textarea
 	border none
 	border-bottom 2px solid #a8002c
 	anim()
-	&:hover
-		//border-color alpha(#5e112d, .8)
-		//box-shadow 0 1px 0 alpha(#a8002c, .8)
-	&:focus
-		//border-color alpha(#fff, .6)
-		//box-shadow 0 1px 0 alpha(#fff, .4)
+	//&:hover
+	//&:focus
 textarea.full
 	width 100%
 

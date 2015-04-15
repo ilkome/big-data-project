@@ -32,21 +32,19 @@ html
 .wrapbox
 	position relative
 	margin 0 auto
-	padding 0 10px
+	padding 0 25px
 	@media sm
-		padding 0 20px
-	@media md
 		padding 0 40px
 	@media xl
-		padding 0 70px
+		padding 0 65px
 	@media large
-		padding 0 85px
+		padding 0 83px
 	@media mlarge
 		padding 0 90px
 		max-width 1366px	
 
 .is-red
-	color #A8002C
+	color color-red
 
 
 
@@ -56,14 +54,15 @@ html
 .welcomebox
 	position relative
 	height 100%
-	min-height 650px
+	min-height 450px
 	background url("../img/bg-welcome-1024.png") center center no-repeat
 	bgcover()
-	@media md
+	@media sm
+		min-height 650px
 		background url("../img/bg-welcome-1024.png") center center no-repeat
 		bgcover()
-	@media lg
-		min-height 700px
+	@media xl
+		min-height 650px
 	@media large
 		min-height 700px
 	@media mlarge
@@ -72,7 +71,9 @@ html
 	.wrapbox
 		z-index 2
 		height 100%
-		min-height 700px
+		min-height 450px
+		@media sm
+			min-height 650px
 		@media mlarge
 			min-height 800px
 
@@ -90,23 +91,25 @@ html
 			z-index 1
 	
 	.logo
-		padding 10px 0 95px 0px
+		padding 25px 0 95px 0px
 		@media sm
-			padding-top 30px
-			padding-bottom 95px
-		@media md
-			padding-top 40px
+			padding-top 35px
 			padding-bottom 55px
+		@media xl
+			padding-top 40px
 		@media large
 			padding-top 50px
 	
 	.logo a
 		display block
-		width 192px
-		height 79px
-		background url("../img/480/logo.png") no-repeat
-			
-		@media lg
+		width 130px
+		height 53px
+		background url("../img/320/logo.png") no-repeat
+		@media sm
+			width 192px
+			height 79px
+			background url("../img/480/logo.png") no-repeat
+		@media xl
 			width 151px
 			height 61px
 			background url("../img/logo.png") no-repeat
@@ -120,63 +123,67 @@ html
 			background url("../img/1366/logo.png") no-repeat
 	
 	.content
-		width 310px
-		height 437px
-		margin 0 auto
-		background url("../img/480/square-welcome.png") 35px 0 no-repeat
-		anim()
 		position absolute
 		left 50%
 		top 50%
-		margin-top -220px
-		margin-left -155px
+		width 250px
+		height 437px
+		margin-top -110px
+		margin-left -110px
+		background url("../img/320/square-welcome.png") 35px 0 no-repeat
+		anim()
 		@media sm
-			width 350px
-			margin-left -175px
-		@media md
-			width 430px
+			width 320px
 			height 460px
-			margin-left -200px
-			background url("../img/square-welcome.png") 85px 0 no-repeat
-		@media lg
-			margin-top -230px
-			margin-left -210px
+			margin-top -190px
+			margin-left -115px
+			background url("../img/480/square-welcome.png") 0 0 no-repeat
+		@media xl
+			width 350px
+			margin-top -200px
+			margin-left -115px
+			background url("../img/square-welcome.png") 0 0 no-repeat
 		@media large
 			height 574px
 			margin-top -270px
-			margin-left -160px
+			margin-left -155px
 			background url("../img/1280/square-welcome.png") 0 0 no-repeat
 		@media mlarge
 			height 612px
 			margin-top -270px
-			margin-left -170px
+			margin-left -165px
 			background url("../img/1366/square-welcome.png") 0 0 no-repeat
 			
 	
 	.content__title
-		padding 80px 0 0 0
-		font-size 50px
-		text-transform uppercase
-		line-height 54px
+		margin-left -20px
+		padding-top 55px
+		font-size 35px
+		line-height 35px
 		letter-spacing 2px
+		text-transform uppercase
 		anim()
 		@media sm
-			margin-left -10px
+			margin-left -80px
+			padding-top 80px
+			font-size 50px
 			letter-spacing 4px
-		@media md
-			margin-left 0
-			padding-top 88px
-			letter-spacing 6px
+			line-height 54px
+		@media xl
+			padding-top 85px
+			margin-left -85px
+			font-size 55px
 			line-height 56px
+			letter-spacing 2.5px
 		@media large
-			padding-top 105px
 			margin-left -110px
+			padding-top 105px
 			font-size 70px
 			letter-spacing 3px
 			line-height 70px
 		@media mlarge
-			padding-top 115px
 			margin-left -120px
+			padding-top 115px
 			font-size 75px
 			letter-spacing 3.5px
 			line-height 75px
@@ -184,27 +191,28 @@ html
 	.content__text
 		float right
 		position relative
-		padding 30px 10px 0 0px
-		font-size 20px
+		margin-right -5px
+		padding 24px 0px 0 0px
+		font-size 13px
+		line-height 16px
 		anim()
 		@media sm
-			margin-right -15px
-			letter-spacing -0.5px
+			margin-right -5px
+			padding 30px 0 0 130px
+			font-size 20px
 			line-height 26px
-		@media md
-			margin-right 10px
-			padding 35px 0 0 200px
 			letter-spacing -0.5px
 		@media xl
-			margin-right 0
+			margin-right 5px
+			padding-top 35px
 			letter-spacing 0px
 		@media large
-			margin-right -5px
-			padding 45px 0 0 145px
+			margin-right -85px
+			padding 45px 0 0 0
 			font-size 26px
 			line-height 34px
 		@media mlarge
-			margin-right -35px
+			margin-right -115px
 			padding 45px 0 0 0px
 			font-size 28px
 			line-height 36px
@@ -217,40 +225,34 @@ html
 .descbox
 	overflow hidden
 	position relative
-	padding 50px 0 90px 0
+	padding 50px 0 40px 0
 	background #1d202d
 	@media sm
 		padding-top 90px
 		padding-bottom 70px
-	@media lg
-		padding 150px 0	
 	@media xl
-		height 100%
 		padding 0
-		min-height 600px
+		height 100%
+		min-height 700px
 	@media large
 		min-height 700px
 	@media mlarge
 		min-height 800px
 
 	.ins
-		@media lg
-			position relative
-			width 660px
-			margin 0 auto
+		padding-left 15px
 		@media xl
-			z-index 5
 			position absolute 
 			left 50% 
 			top 50%
 			width 900px
-			margin-left -450px
+			margin-left -455px
 			transform translate(0%, -50%)
 	
 	.wrapbox
 		@media xl
 			height 100%
-			min-height 600px
+			min-height 700px
 	
 	.bg-right
 		@media xl
@@ -263,43 +265,44 @@ html
 
 	.content__info
 		position relative
-		width 250px
+		width 165px
 		margin 0 auto
-		background url("../img/480/square-info.png") 0px 0px no-repeat
+		background url("../img/320/square-info.png") 0px 0px no-repeat
 		@media sm
-			width 275px
-		@media lg
+			width 246px
+			background url("../img/480/square-info.png") 0px 0px no-repeat
+		@media xl
 			width auto
 			height 460px
-			margin-left 0px
-			background url("../img/square-info.png") 70px 0px no-repeat
-		@media xl
 			margin-left 115px
+			background url("../img/square-info.png") 70px 0px no-repeat
 		@media large
-			margin-left 120px
+			margin-left 115px
 			height 574px
 			background url("../img/1280/square-info.png") 0px 0px no-repeat
 		@media mlarge
-			margin-left 95px
+			margin-left 90px
 			height 612px
 			background url("../img/1366/square-info.png") 0px 0px no-repeat
 		
 		.title
-			padding 85px 0 85px 0
-			font-size 52px
+			margin-left -5px
+			padding 55px 0 60px 0
+			font-size 35px
+			line-height 35px
+			letter-spacing 1.5px
 			text-transform uppercase
-			line-height 54px
-			letter-spacing 1px
 			anim()
 			@media sm
-				margin-left -5px
-				padding 80px 0 85px 0
-				letter-spacing 2px
-			@media lg
+				padding 80px 0 90px 0
+				font-size 52px
+				line-height 54px
+				letter-spacing 2.5px
+			@media xl
 				padding-top 90px
 				padding-left 10px
 				font-size 55px
-				line-height 54px
+				line-height 56px
 			@media large
 				margin-left -80px
 				padding-top 105px
@@ -307,7 +310,7 @@ html
 				font-size 70px
 				line-height 70px
 			@media mlarge
-				margin-left -90px
+				margin-left -85px
 				padding-top 115px
 				padding-left 0
 				font-size 75px
@@ -316,16 +319,21 @@ html
 		
 		.desc
 			width 100px
-			padding 0 0 125px 30px
-			font-size 19px
+			padding 0 0 85px 20px
+			font-size 13px
 			anim()
-			@media lg
+			@media sm
+				padding 0 0 130px 30px
+				font-size 19px
+				line-height 24px
+			@media xl
 				position absolute 
 				left 100px 
 				bottom 30px
 				width 100px
 				padding 0
 				font-size 14px
+				line-height 18px
 			@media large
 				bottom 35px
 				left 40px
@@ -338,38 +346,36 @@ html
 				line-height 26px
 	
 	.content__text
-		padding 0 0px
-		font-size 22px
-		letter-spacing 0.5px
-		line-height 30px
+		padding 0 40px
+		font-size 15px
+		line-height 19px
+		letter-spacing 0px
 		hyphens auto
 		anim()
 		@media sm
-			padding 0 80px 0 80px
+			padding 0 65px
+			font-size 22px
 			line-height 29px
-		@media lg
+			letter-spacing 0.5px
+		@media xl
 			hyphens none
 			position absolute 
-			left 330px 
+			left 460px 
 			top 95px
 			width 450px
 			font-size 18px
 			line-height 23px
-			letter-spacing 1px
-		@media xl
-			width 450px
-			left 430px
 			letter-spacing 0px
 		@media large
-			width 585px
-			left 445px
+			width 555px
+			left 470px
 			top 115px
 			font-size 22px
 			line-height 29px
 			letter-spacing 0px
 		@media mlarge
-			width 585px
-			left 440px
+			width 500px
+			left 470px
 			top 120px
 			font-size 24px
 			line-height 31px
@@ -387,47 +393,51 @@ html
 // ===============================================
 .jobbox
 	position relative
-	padding-top 100px
-	padding-bottom 100px
+	padding-top 65px
+	padding-bottom 5px
 	background #efefef
-	color #3B3B3B
+	color color-grey
 	@media sm
-		padding-bottom 45px
-	@media md
-		padding 45px 0 85px 0
+		padding 100px 0 30px 0
+	@media xl
+		padding-top 45px
+		padding-bottom 75px
 	@media large
 		padding-top 60px
 		padding-bottom 100px
 	@media mlarge
 		padding-top 65px
 
-.jobinfo
-	clearfix()
-	padding-bottom 25px
-	font-size 19px
-	@media sm
-		padding-bottom 40px
-	@media md
-		padding-bottom 40px
-	@media large
-		padding-bottom 55px
-		font-size 22px
-	@media mlarge
-		padding-bottom 60px
-		font-size 24px
+	.jobbox__info
+		clearfix()
+		padding-bottom 25px
+		font-size 13px
+		@media sm
+			padding-bottom 35px
+			font-size 19px
+		@media xl
+			letter-spacing -0.5px
+		@media large
+			padding-bottom 45px
+			font-size 22px
+		@media mlarge
+			padding-bottom 50px
+			font-size 24px
+			letter-spacing 0
 
-	.title
-		float left
-		padding-right 20px
-	.count
-		float left
-		color #858585
-		@media md
-			float right 
+		.title
+			float left
+			padding-right 20px
+		.count
+			float right
+			color color-grey-white 
+		.sep
+			display inline-block
+			padding 0 10px
 
 .jobcontent
 	anim()
-	@media lg
+	@media xl
 		padding-left 110px
 	@media large
 		padding-left 140px
@@ -435,45 +445,52 @@ html
 		padding-left 150px
 	
 	h2
-		margin-bottom 30px
-		font-size 53px
-		line-height 40px
-		letter-spacing -1px
+		margin-bottom 25px
+		font-size 34px
+		line-height 28px
+		letter-spacing -0.5px
 		@media sm
-			padding-bottom 10px
-		@media md
-			margin-bottom 35px
+			margin-bottom 40px
+			font-size 53px
+			line-height 42px
+			letter-spacing -1px
+		@media xl
 			font-size 44px
-			line-height auto
+			line-height 56px
 			letter-spacing -0.5px
 		@media large
-			margin-bottom 50px
-			font-size 56px
-		@media mlarge
 			margin-bottom 55px
 			font-size 60px
-		
+			letter-spacing -3px
+		@media mlarge
+			margin-bottom 60px
+			font-size 60px
+			letter-spacing -1px
 
 .jobcontent__meta
-	padding-bottom 45px
-	@media md
-		display inline-block
+	padding-bottom 30px
+	@media sm
+		padding-bottom 45px
+	@media xl
 		padding-bottom 20px
 	@media large
 		padding-bottom 25px
 	
-	.count 
+	.count
 		width 100%
-		padding-bottom 12px
+		padding-bottom 10px
 		border-bottom 2px solid #b3b3b3
-		font-size 19px
+		font-size 13px
 		@media sm
-			width auto
-		@media md
-			width 95px
+			padding-bottom 15px
+			font-size 19px
+		@media xl
+			padding-bottom 10px
 			font-size 27px
+			width 95px
 		@media large
 			width 125px
+			padding-bottom 15px
 			font-size 34px
 		@media mlarge
 			width 130px
@@ -481,13 +498,16 @@ html
 			font-size 36px
 	
 	.task
-		padding-top 12px
-		color #858585
-		font-size 19px
+		padding-top 8px
+		color color-grey-white
+		font-size 13px
 		text-transform uppercase
 		letter-spacing 0.5px
-		@media md
+		@media sm
 			padding-top 12px
+			font-size 19px
+			letter-spacing 1px
+		@media xl
 			font-size 13px
 		@media large
 			padding-top 18px
@@ -499,17 +519,23 @@ html
 			letter-spacing 1px
 
 .jobcontent__text
-	margin-right 50px
-	font-size 23px
-	line-height 28px
+	margin-left -3px
+	margin-right 10px
+	font-size 15px
+	line-height 19px
 	hyphens auto
 	anim()
-	@media md
+	@media sm
+		line-height 24px
+		font-size 23px
+		hyphens none
+		margin-left 5px
+		line-height 28px
+	@media xl
 		margin-left 95px
 		padding-right 95px
-		line-height 24px
 		font-size 16px
-		hyphens none
+		line-height 22px
 	@media large
 		font-size 18px
 		line-height 29px
@@ -520,9 +546,11 @@ html
 	ul
 		margin-left 0
 		padding-left 0
-		margin-bottom 55px
-		@media md
-			margin-bottom 40px
+		margin-bottom 60px
+		@media sm
+			margin-bottom 50px
+		@media xl
+			margin-bottom 45px
 		@media large
 			margin-bottom 50px
 		@media mlarge
@@ -530,13 +558,15 @@ html
 	
 	li
 		margin-left 0
-		margin-bottom 30px
+		margin-bottom 20px
 		padding-left 20px
+		background-position 3px 8px
 		@media sm
-			padding-left 25px
-		@media md
 			padding-left 20px
-			margin-bottom 22px
+			margin-bottom 30px
+			background-position 0 13px
+		@media xl
+			margin-bottom 30px
 		@media large
 			margin-left 25px
 			padding-left 25px
@@ -548,7 +578,7 @@ html
 
 .jobcontent__text.has-bg
 	position relative
-	@media md
+	@media xl
 		margin -50px 140px 45px 80px
 		padding 30px 0
 	@media large
@@ -558,7 +588,7 @@ html
 		margin -65px 180px 70px 100px
 	
 	ul
-		@media md
+		@media xl
 			margin-left 15px
 			margin-bottom 0
 		@media large
@@ -569,27 +599,27 @@ html
 			margin-left -5px
 	
 	.jobcontent__text-in
-		@media md
+		@media xl
 			z-index 2
 			position relative
 			padding 20px 20px 10px 0
 			background url("../img/bg-lines-grey.png")
 	
 	.bg-square
-		@media md
+		@media xl
 			position absolute 
 			z-index 1
 			right -30px 
 			top 0px
 			width 325px
 			height 100%
-			border 8px solid #a8002c
+			border 8px solid color-red
 		@media large
 			width 410px
-			border 10px solid #a8002c
+			border 10px solid color-red
 		@media large
 			width 430px
-			border 11px solid #a8002c
+			border 11px solid color-red
 			
 
 
@@ -597,27 +627,24 @@ html
 //	#feedbackbox
 // ===============================================
 .feedbackbox
-	padding 90px 0 40px 0
+	padding 55px 0 40px 0
 	color color-white
 	background #1d202d
 	@media sm
-		padding-top 75px
-	@media md
-		padding-top 100px
+		padding-top 80px
+		padding-bottom 40px
 	@media xl
 		padding-top 100px
-		//position fixed
-		//width 100%
 	@media large
 		padding-top 130px
 	@media mlarge
-		padding-top 135px
+		padding-top 140px
 		
 	.ins
-		padding-bottom 90px
+		padding-bottom 60px
 		@media sm
 			padding-bottom 100px
-		@media lg
+		@media xl
 			padding 0 110px 90px 110px
 		@media large
 			padding 0 140px 115px 140px
@@ -625,26 +652,30 @@ html
 			padding 0 150px 120px 150px
 	
 	h2
+		margin-bottom 30px
 		color color-white
-		font-size 44px
-		letter-spacing -1px
+		font-size 36px
+		letter-spacing -0.5px
+		line-height 40px
 		@media sm
-			font-size 53px
-			line-height 64px
 			margin-bottom 65px
-		@media md
-			margin-bottom 15px
+			font-size 53px
+			line-height 60px
+			letter-spacing -1px
+		@media sm
+			margin-bottom 20px
 			font-size 44px
-			line-height 70px
+			letter-spacing -0.5px
 		@media large
-			margin-bottom 30px
-			font-size 56px
-		@media mlarge
 			margin-bottom 40px
+			font-size 56px
+			letter-spacing -1px
+		@media mlarge
+			margin-bottom 50px
 			font-size 60px
 	
 	.rowbox-2				
-		@media lg
+		@media xl
 			wrap()
 			gutter(20px)
 			margin-bottom 0px
@@ -652,13 +683,15 @@ html
 			gutter(15px)
 
 	.colbox
-		@media lg
+		@media xl
 			margin-bottom 0
 			col(2, 1)
 	
 	.rowbox-2.has-padding
-		margin-bottom 20px
-		@media lg
+		margin-bottom 0px
+		@media sm
+			margin-bottom 20px
+		@media xl
 			margin-bottom 25px
 		@media large
 			margin-bottom 40px
@@ -671,86 +704,106 @@ html
 		
 	.input-text
 		margin-bottom 5px
+		font-size 15px
+		letter-spacing -0.5px
 		@media sm
-			letter-spacing 2px
-		@media lg
-			margin-bottom 5px
-			font-size 19px
+			margin-bottom 0
+			font-size 23px
 			letter-spacing 0px
 		@media xl
 			margin-bottom 0px
+			font-size 19px
+			letter-spacing -0.5px
 		@media large
 			margin-bottom 10px
 			font-size 22px
+			letter-spacing 0
 		@media mlarge
 			margin-bottom 15px
 			font-size 24px
 			
 
 	.textarea-text
+		font-size 16px
+		letter-spacing -0.5px
 		@media sm
-			letter-spacing 2px
-		@media lg
+			font-size 23px
 			letter-spacing 0px
+		@media xl
+			font-size 19px
+			letter-spacing -0.5px
 		@media large
 			font-size 22px
+			letter-spacing 0		
 		@media mlarge
 			font-size 24px
-	
+			
+	a.attachfile
+		display block
+		margin-top 10px
+		margin-bottom 20px
+		padding-bottom 15px
+		font-size 16px
+		letter-spacing -0.5px
+		background url("../img/320/i-plus.png") right center no-repeat
+		border-bottom 2px solid #2f354d
+		&:hover
+			color color-white
+			border-color alpha(#fff, .4)
+		@media sm
+			margin-top 25px
+			margin-bottom 55px
+			font-size 23px
+			letter-spacing 0px		
+		@media xl
+			margin-top 40px
+			font-size 19px
+			letter-spacing -0.5px
+		@media large
+			margin-top 50px
+			font-size 22px
+			letter-spacing 0px		
+			background url("../img/1280/i-plus.png") right center no-repeat
+		@media mlarge
+			margin-top 60px
+			font-size 24px
+			background url("../img/1366/i-plus.png") right center no-repeat
+
 	.action
 		padding-top 45px
-		@media lg
+		@media sm
+			padding-top 55px
+		@media xl
 			padding-top 0px
 		@media large
 			padding-top 20px
 		@media mlarge
 			padding-top 30px
 			
-	a.attachfile
-		display block
-		margin-top 35px
-		margin-bottom 55px
-		padding-bottom 15px
-		font-size 20px
-		letter-spacing 0
-		background url("../img/i-plus.png") right center no-repeat
-		border-bottom 2px solid #2f354d
-		&:hover
-			color color-white
-			border-color alpha(#fff, .4)
-		@media sm
-			letter-spacing 2px		
-		@media lg
-			margin-top 40px
-			font-size 18px
-			letter-spacing 0px		
-		@media large
-			margin-top 60px
-			font-size 22px
-			background url("../img/1280/i-plus.png") right center no-repeat
-		@media mlarge
-			font-size 24px
-			background url("../img/1366/i-plus.png") right center no-repeat
-
 	.hvr-sweep-to-right
 		display block
 		position relative
 		backface-visibility hidden
 		transform translateZ(0)
-		padding 35px 62px
+		padding 25px 62px
 		font-family font-site-bold
-		font-size 19px
-		border 2px solid #a8002c
+		font-size 13px
+		border 2px solid color-red
 		box-shadow 0 0 0 1px #5e112d
 		text-transform uppercase
 		transition-property color
 		transition-duration 0.3s
-		@media lg
+		@media sm
+			padding 35px 62px
+			font-size 19px
+		@media xl
 			display inline-block
 			width auto
-			padding 17px 62px
+			padding 20px 60px
 			font-size 13px
 		@media large
+			display inline-block
+			width auto
 			padding 22px 80px
 			font-size 16px
 		@media mlarge
@@ -765,7 +818,7 @@ html
 			left 0
 			right 0
 			bottom 0
-			background #a8002c
+			background color-red
 			transform scaleX(0)
 			transform-origin 0 50%
 			transition-property transform
@@ -773,16 +826,18 @@ html
 			transition-timing-function ease-out
 		&:hover, &:focus, &:active
 			color white
-			border 2px solid #a8002c
+			border 2px solid color-red
 			box-shadow 0 0 0 1px #5e112d
 		&:hover:before, &:focus:before, &:active:before
 			transform scaleX(1)
 	
 	.copy 
 		color #4C5168
-		font-size 18px
+		font-size 12px
 		text-align center
-		@media lg
+		@media sm
+			font-size 18px
+		@media xl
 			font-size 14px
 		@media large
 			font-size 15px
@@ -801,70 +856,39 @@ html
 	h1
 		margin-bottom 50px
 		font-size 40px
-		@media md
+		@media sm
 			font-size 58px
 		
 	p
 		margin-bottom 70px
 		font-size 18px
-		color #3b3b3b
+		color color-grey
 		font-size 18px
-		@media md
+		@media sm
 			font-size 24px
 		
 	.btn-grey
 		display inline-block
 		width 100%
 		padding 20px 0
-		color #3b3b3b
+		color color-grey
 		font-family font-site-bold
 		font-size 18px
 		text-transform uppercase
 		text-align center
 		border 2px solid #cacaca
 		&:hover
-			border-color #3b3b3b
-		@media md
+			border-color color-grey
+		@media sm
 			width 330px
 			padding 20px 0
 			font-size 18px
 			
 .formresult-in
 	padding 10px 20px
-	@media md
+	@media sm
 		padding 50px
 	@media xl
 		padding 100px
-	@media xlarge
+	@media mlarge
 		padding 200px
-		
-
-
-#red, #blue {
-	width:128px;
-	height:128px;
-	background:#f33 url(images/face.png);
-}
-
-#red {
-	position: absolute;
-	float:left;
-	margin:1em;
-}
-
-#blue {
-	background:#09f;
-	margin-top:20px;
-	width 100px
-	height 100px
-	z-index 1000;
-}
-
-#blue_wrapper {
-	position:fixed;
-	top:0;
-	right:20px;
-	width 10px
-	height 10px
-	z-index 1000;
-}
