@@ -17,10 +17,10 @@ $(document).ready(function(){
 
 
 	// paralax
-	/*var s = skrollr.init({
+	var s = skrollr.init({
 		forceHeight: false,
 	});
-
+	/*
 	if(s.isMobile()){
 		s.destroy()
 	}
