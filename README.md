@@ -1,11 +1,11 @@
-# Gulp shik
-Version 2.4
+# Big Data Project
+> Landing page, HTML & CSS, JavaScript, jQuery
 
-Fronend base template
-
-Created by Ilya Komichev
-http://ilko.me
+# Demo 
+http://ilko.me/works/big-data-project/index.html
 
 
-## Information
-http://ilko.me/gulp-2.html
+# Documentation
+> This project based on front-end gulp boilerplate by Ilya Komichev.
+
+https://github.com/ilkome/gulp-boilerplate
